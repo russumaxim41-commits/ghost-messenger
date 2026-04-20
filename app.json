@@ -39,8 +39,8 @@
       "expo-font",
       "expo-asset",
       "react-native-ble-manager",
-      "expo-image-picker",
-      [
+      "expo-image-picker"
+    ],
     "extra": {
       "eas": {
         "projectId": "05643833-d85b-41d9-bff5-3a9eaa4456bf"
