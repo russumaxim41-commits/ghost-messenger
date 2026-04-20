@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
@@ -16,13 +17,34 @@
       "bundleIdentifier": "com.ghost.messenger"
     },
     "android": {
+      "package": "com.ghost.messenger",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_ADVERTISE",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#07091A"
-      },
-      "package": "com.ghost.messenger"
+      }
     },
-    "plugins": [],
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-font",
+      "expo-asset",
+      "react-native-ble-manager",
+      "expo-image-picker",
+      [
+        "react-native-vision-camera",
+        { "cameraPermissionText": "GHOST needs access to your camera to scan QR codes." }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "05643833-d85b-41d9-bff5-3a9eaa4456bf"
