@@ -46,7 +46,6 @@
       "favicon": "./assets/images/icon.png"
     },
     "plugins": [
-      "expo-font",
       "expo-sqlite",
       [
         "react-native-ble-manager",
