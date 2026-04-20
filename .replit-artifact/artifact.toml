@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "GHOST Messenger"
+version = "1.0.0"
+id = "artifacts/ghost-messenger"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 26074
+
+[services.development]
+run = "pnpm --filter @workspace/ghost-messenger run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ghost-messenger", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/ghost-messenger", "run", "serve" ]
+
+[services.env]
+PORT = "26074"
+BASE_PATH = "/"
