@@ -41,10 +41,6 @@
       "react-native-ble-manager",
       "expo-image-picker",
       [
-        "react-native-vision-camera",
-        { "cameraPermissionText": "GHOST needs access to your camera to scan QR codes." }
-      ]
-    ],
     "extra": {
       "eas": {
         "projectId": "05643833-d85b-41d9-bff5-3a9eaa4456bf"
