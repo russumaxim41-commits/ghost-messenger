@@ -16,7 +16,6 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.ghost.messenger"
     },
-    "plugins": [],
     "android": {
       "package": "com.ghost.messenger",
       "permissions": [
@@ -34,6 +33,17 @@
         "backgroundColor": "#07091A"
       }
     },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-font",
+      "expo-asset",
+      "react-native-ble-manager",
+      "expo-image-picker",
+      [
+        "react-native-vision-camera",
+        { "cameraPermissionText": "GHOST needs access to your camera to scan QR codes." }
+      ]
     ],
     "extra": {
       "eas": {
