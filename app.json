@@ -2,66 +2,31 @@
   "expo": {
     "name": "GHOST",
     "slug": "ghost-messenger",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "ghost-messenger",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/images/icon.png",
+      "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#07091A"
     },
     "ios": {
-      "supportsTablet": false,
-      "bundleIdentifier": "com.shadow77.ghostmessenger",
-      "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "GHOST использует Bluetooth для обнаружения и обмена данными с устройствами поблизости",
-        "NSBluetoothPeripheralUsageDescription": "GHOST работает как BLE сервер для peer-to-peer обмена сообщениями"
-      }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ghost.messenger"
     },
     "android": {
-      "package": "com.shadow77.ghostmessenger",
-      "permissions": [
-        "android.permission.INTERNET",
-        "android.permission.ACCESS_WIFI_STATE",
-        "android.permission.CHANGE_WIFI_STATE",
-        "android.permission.ACCESS_NETWORK_STATE",
-        "android.permission.CHANGE_NETWORK_STATE",
-        "android.permission.BLUETOOTH",
-        "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.BLUETOOTH_SCAN",
-        "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.BLUETOOTH_ADVERTISE",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",
-        "android.permission.RECEIVE_BOOT_COMPLETED",
-        "android.permission.WAKE_LOCK"
-      ]
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#07091A"
+      },
+      "package": "com.ghost.messenger"
     },
-    "web": {
-      "favicon": "./assets/images/icon.png"
-    },
-    "plugins": [
-      [
-        "react-native-ble-manager",
-        {
-          "isBackgroundEnabled": true,
-          "modes": ["peripheral", "central"],
-          "bluetoothAlwaysUsageDescription": "GHOST использует Bluetooth для mesh-сети (BLE Dual Role)"
-        }
-      ],
-      [
-        "@supersami/rn-foreground-service",
-        {
-          "notificationTitle": "GHOST Mesh",
-          "notificationBody": "GHOST работает в фоне",
-          "notificationColor": "#00C48C"
-        }
-      ]
-    ]
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "05643833-d85b-41d9-bff5-3a9eaa4456bf"
+      }
+    }
   }
 }
