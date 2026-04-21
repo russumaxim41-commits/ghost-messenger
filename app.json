@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "icon": "assets/images/icon.png",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": false,
     "splash": {
       "image": "assets/images/splash-icon.png",
       "resizeMode": "contain",
@@ -39,7 +38,15 @@
       "expo-font",
       "expo-asset",
       "react-native-ble-manager",
-      "expo-image-picker"
+      "expo-image-picker",
+      ["expo-build-properties", {
+        "android": {
+          "compileSdkVersion": 34,
+          "targetSdkVersion": 34,
+          "buildToolsVersion": "34.0.0",
+          "extraMavenRepos": ["https://www.jitpack.io"]
+        }
+      }]
     ],
     "extra": {
       "eas": {
