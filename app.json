@@ -34,14 +34,13 @@
       "expo-font",
       "expo-asset",
       "react-native-ble-manager",
-      ["react-native-vision-camera", { "enableCodeScanner": true }],
       ["expo-build-properties", {
         "android": {
           "compileSdkVersion": 34,
           "targetSdkVersion": 34,
           "buildToolsVersion": "35.0.0",
           "kotlinVersion": "2.1.20",
-          "newArchEnabled": true
+          "newArchEnabled": false
         }
       }]
     ],
