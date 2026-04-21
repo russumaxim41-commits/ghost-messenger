@@ -66,6 +66,7 @@
     "react-native-qrcode-svg": "^6.3.21",
     "react-native-tcp-socket": "^6.4.1",
     "react-native-udp": "^4.1.7",
+    "react-native-worklets-core": "^1.6.3",
     "tweetnacl": "^1.0.3",
     "tweetnacl-util": "^0.15.1"
   }
