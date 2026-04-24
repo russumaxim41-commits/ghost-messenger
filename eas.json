@@ -4,26 +4,18 @@
     "appVersionSource": "local"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
-    },
     "preview": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk"
-      }
-    },
-    "production": {
-      "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease -Pandroid.abiFilters=arm64-v8a"
+      },
+      "env": {
+        "JAVA_OPTS": "-Xmx1536m -XX:+UseSerialGC",
+        "GRADLE_OPTS": "-Dorg.gradle.jvmargs=-Xmx1536m -Dorg.gradle.workers.max=1 -Dkotlin.incremental=false",
+        "KOTLIN_INCREMENTAL": "false"
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
+

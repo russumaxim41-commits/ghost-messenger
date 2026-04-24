@@ -1,52 +1,18 @@
 {
   "expo": {
-    "name": "GHOST",
+    "name": "ghost-messenger",
     "slug": "ghost-messenger",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "assets/images/icon.png",
-    "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "assets/images/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#07091A"
-    },
+    "newArchEnabled": false,
+    "icon": "./assets/icon.png",
     "android": {
-      "package": "com.ghost.messenger",
-      "permissions": [
-        "android.permission.BLUETOOTH",
-        "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.BLUETOOTH_ADVERTISE",
-        "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.BLUETOOTH_SCAN",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.RECORD_AUDIO"
-      ],
+      "package": "com.shat_77.ghostmessenger",
+      "newArchEnabled": false,
       "adaptiveIcon": {
-        "foregroundImage": "assets/images/icon.png",
-        "backgroundColor": "#07091A"
-      }
-    },
-    "plugins": [
-      "expo-router",
-      "expo-sqlite",
-      "expo-font",
-      "expo-asset",
-      "react-native-ble-manager",
-      ["expo-build-properties", {
-        "android": {
-          "compileSdkVersion": 34,
-          "targetSdkVersion": 34,
-          "buildToolsVersion": "35.0.0",
-          "kotlinVersion": "2.1.20",
-          "extraMavenRepos": ["../../node_modules/react-native-worklets-core/android"]
-        }
-      }]
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "05643833-d85b-41d9-bff5-3a9eaa4456bf"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
       }
     }
   }
 }
+
