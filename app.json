@@ -4,14 +4,9 @@
     "slug": "ghost-messenger",
     "version": "1.0.0",
     "newArchEnabled": false,
-    "icon": "./assets/icon.png",
     "android": {
       "package": "com.shat_77.ghostmessenger",
-      "newArchEnabled": false,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      "newArchEnabled": false
     }
   }
 }
